@@ -1,17 +1,25 @@
-package training;
 
-public class Student extends Person {
-	private int rollno;
-	private String collegename;
-public Student(int roll,String name,String college)
-{
-	super(name);
-	rollno = roll;
-	collegename = college;
-}
-@Override
-public String toString() {
-	return "Name of Student="+super.name+",Roll Number="+this.rollno+", College name="+this.collegename;
-}
-
+public class Student extends Person{
+	private int id;
+	public Student()
+	{
+		super();
+	}
+	public Student(String name,int studentId)
+	{
+		super(name);
+		this.id = studentId;
+	}
+	public int getId() {
+		return this.id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	@Override
+	public void getDetails() {
+		System.out.println("Student "+this.getName()+" with id "+this.getId());
+		
+	}
+	
 }

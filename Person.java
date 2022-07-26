@@ -1,14 +1,21 @@
-package training;
 
-public class Person {
-protected String name;
-protected Person(String name)
-{
-	this.name = name;
-}
-@Override
-public String toString() {
-	return "Person name = "+this.name;
-}
+public abstract class Person {
+	private String name;
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Person()
+	{
+		
+	}
+	public Person(String name)
+	{
+		this.name = name;
+	}
+	public abstract void getDetails();
 }

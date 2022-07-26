@@ -1,11 +1,10 @@
-package training;
+package InterfacePack;
 
-public class LaserPrinter implements Printer {
-
+public class LaserPrinter implements Printer{
 	@Override
-	public void print() {
-		System.out.println("Laser printer printing");
-
+	public void print()
+	{
+		System.out.println("Printing with Laser printer");
 	}
 
 }
